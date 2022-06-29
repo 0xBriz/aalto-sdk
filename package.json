@@ -1,5 +1,5 @@
 {
-  "name": "aalto-sdk",
+  "name": "@oxbriz/aalto-sdk",
   "version": "1.0.0",
   "description": "JavaScript SDK for interacting with the Balancer Protocol V2",
   "license": "GPL-3.0-only",
@@ -89,5 +89,16 @@
     "@ethersproject/constants": "^5.4.0",
     "@ethersproject/contracts": "^5.4.0",
     "@ethersproject/providers": "^5.4.5"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xBriz/aalto-sdk.git"
+  },
+  "author": "0xBriz",
+  "bugs": {
+    "url": "https://github.com/0xBriz/aalto-sdk/issues"
   }
 }
