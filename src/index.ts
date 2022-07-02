@@ -14,6 +14,9 @@ export * from './modules/sor/sor.module';
 export * from './modules/pools/pools.module';
 export * from './modules/pools/types';
 export * from './balancerErrors';
+export * from './data/bsc/token-addresses';
+export * from './data/abis';
+
 export {
   SwapInfo,
   SubgraphPoolBase,
