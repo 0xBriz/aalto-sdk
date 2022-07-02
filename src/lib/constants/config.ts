@@ -1,18 +1,20 @@
 import { Network } from './network';
 import { BalancerNetworkConfig } from '@/types';
+import { WBNB_ADDRESS } from '@/data/bsc/token-addresses';
+import { VAULT_ADDRESS_BSC } from '@/data/bsc/contract-addresses';
 
-export const balancerVault = '0xc37c34eA9CA579aDF279A16C547e801ed722F3b5';
+export const balancerVault = VAULT_ADDRESS_BSC;
 
 export const BALANCER_NETWORK_CONFIG: Record<Network, BalancerNetworkConfig> = {
   [Network.BSC]: {
     chainId: Network.BSC, // 56
     addresses: {
       contracts: {
-        vault: '0xc37c34eA9CA579aDF279A16C547e801ed722F3b5',
+        vault: VAULT_ADDRESS_BSC,
         multicall: '',
       },
       tokens: {
-        wrappedNativeAsset: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+        wrappedNativeAsset: WBNB_ADDRESS,
       },
     },
     urls: {
@@ -28,7 +30,7 @@ export const BALANCER_NETWORK_CONFIG: Record<Network, BalancerNetworkConfig> = {
         multicall: '',
       },
       tokens: {
-        wrappedNativeAsset: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+        wrappedNativeAsset: WBNB_ADDRESS,
       },
     },
     urls: {
