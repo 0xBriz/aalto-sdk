@@ -10,7 +10,7 @@ import { Provider } from '@ethersproject/providers';
 import { Network } from '@/lib/constants/network';
 import { BalancerNetworkConfig, BalancerSdkSorConfig } from '@/types';
 
-const NETWORKS_WITH_LINEAR_POOLS = [Network.BSC, Network.HARDHAT];
+const NETWORKS_WITH_LINEAR_POOLS = [Network.BSC];
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function mapPools(pools: any[]): SubgraphPoolBase[] {

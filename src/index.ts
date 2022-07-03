@@ -1,3 +1,5 @@
+import { JsonRpcProvider } from '@ethersproject/providers';
+
 export * from './pool-stable';
 export * from './pool-weighted';
 export * from './pool-utils';
@@ -17,6 +19,8 @@ export * from './balancerErrors';
 export * from './data/bsc/token-addresses';
 export * from './data/bsc/contract-addresses';
 export * from './data/abis';
+
+export * from './ames-defi';
 
 export {
   SwapInfo,

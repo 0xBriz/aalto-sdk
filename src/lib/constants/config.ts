@@ -25,22 +25,6 @@ export const BALANCER_NETWORK_CONFIG: Record<Network, BalancerNetworkConfig> = {
     },
     pools: {},
   },
-  [Network.HARDHAT]: {
-    chainId: Network.HARDHAT, // 31337
-    addresses: {
-      contracts: {
-        vault: '',
-        multicall: '',
-      },
-      tokens: {
-        wrappedNativeAsset: WBNB_ADDRESS,
-      },
-    },
-    urls: {
-      subgraph: '',
-    },
-    pools: {},
-  },
 };
 
 export const networkAddresses = (
