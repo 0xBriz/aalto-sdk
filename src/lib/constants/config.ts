@@ -25,6 +25,22 @@ export const BALANCER_NETWORK_CONFIG: Record<Network, BalancerNetworkConfig> = {
     },
     pools: {},
   },
+  [Network.DEV]: {
+    chainId: Network.DEV, // 56
+    addresses: {
+      contracts: {
+        vault: VAULT_ADDRESS_BSC,
+        multicall: MULTICALL_ADDRESS_BSC,
+      },
+      tokens: {
+        wrappedNativeAsset: WBNB_ADDRESS,
+      },
+    },
+    urls: {
+      subgraph: '',
+    },
+    pools: {},
+  },
 };
 
 export const networkAddresses = (
